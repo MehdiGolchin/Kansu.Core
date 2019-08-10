@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>Kansu</RootNamespace>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Compiler\Tokenizer\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Compiler\Tokenizer\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Compiler\Tokenizer\**" />
+    </ItemGroup>
+
+</Project>
